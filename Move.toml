@@ -1,0 +1,25 @@
+[package]
+name = 'CetusIntegrate'
+version = '1.0.0'
+
+[addresses]
+std = "0x1"
+aptos_std = "0x1"
+cetus_integrate = "_"
+cetus_clmm = "_"
+integer_mate = "_"
+
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/aptos-framework'
+
+[dependencies.AptosStdlib]
+git = "https://github.com/aptos-labs/aptos-core.git"
+subdir = "aptos-move/framework/aptos-stdlib"
+rev = "main"
+
+[dependencies.CetusClmm]
+local = "../../Cetus/cetus-clmm"
+#git = "https://git.cplus.link/cetus/cetus-clmm.git"
+#rev = "main"
